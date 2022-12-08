@@ -13,17 +13,27 @@ while counter < 10 :
     
     # Turn the leds on 
     red.value(1)
-    green.value(1)
-    amber.value(1)
+    green.value(0)
+    amber.value(0)
     
     # Wait for half a second 
     time.sleep(0.5)
     
     #Leds on 
     red.value(0)
-    green.value(0)
+    green.value(1)
     amber.value(0)
     
     time.sleep(0.5)
+    
+    red.value(0)
+    green.value(0)
+    amber.value(1)
+    
+    time.sleep(0.5)
+    
+    
     counter +=1
+
+amber.value(0) #Turn off after the loop 
     
